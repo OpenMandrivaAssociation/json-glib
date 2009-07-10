@@ -14,7 +14,7 @@ URL:		http://live.gnome.org/JsonGlib
 Source0:	http://ftp.gnome.org/pub/GNOME/sources/%{name}/0.7/%{name}-%{version}.tar.bz2
 BuildRoot:	%{_tmppath}/%{name}-%{version}-root
 BuildRequires:	glib2-devel
-BuildRequires:	gobject-introspection
+BuildRequires:	gtk-doc
 Requires:	%{libname} = %{version}
 
 %description
@@ -46,7 +46,9 @@ developing applications that use %{name}.
 %setup -q
 
 %build
-%configure2_5x --enable-static=no
+%configure2_5x	--enable-static=no \
+		--enable-gtk-doc \
+		--enable-introspection=no
 %make 
 
 
@@ -72,6 +74,7 @@ rm -rf %{buildroot}
 %{_libdir}/pkgconfig/%{name}-%{libver}.pc
 %{_includedir}/%{name}-%{libver}/
 %doc README NEWS
-%{_libdir}/girepository-1.0/Json-1.0.typelib
-%{_datadir}/gir-1.0/Json-1.0.gir
 %{_datadir}/gtk-doc/html/%{name}/
+# needs to be in separate subpackage?
+#%{_libdir}/girepository-1.0/Json-1.0.typelib
+#%{_datadir}/gir-1.0/Json-1.0.gir
