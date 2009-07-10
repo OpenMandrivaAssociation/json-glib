@@ -14,6 +14,7 @@ URL:		http://live.gnome.org/JsonGlib
 Source0:	http://ftp.gnome.org/pub/GNOME/sources/%{name}/0.7/%{name}-%{version}.tar.bz2
 BuildRoot:	%{_tmppath}/%{name}-%{version}-root
 BuildRequires:	glib2-devel
+BuildRequires:	gobject-introspection
 Requires:	%{libname} = %{version}
 
 %description
