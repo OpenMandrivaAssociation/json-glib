@@ -5,7 +5,7 @@
 %define develname	%mklibname %{name} -d
 
 Name:		json-glib
-Version:	0.7.2
+Version:	0.7.4
 Release:	%mkrel 1
 Summary:	Library for JavaScript Object Notation format
 Group:		System/Libraries
@@ -58,7 +58,7 @@ rm -rf %{buildroot}
 find %{buildroot} -name '*.la' -exec rm -f {} ';'
 
 %check
-#%make check
+%make check
 
 %clean
 rm -rf %{buildroot}
