@@ -1,17 +1,18 @@
 %define libver 1.0
 %define major 0
+%define mainver %(echo %{version} | sed -e "s/^\\([0-9]\\+\\)\\.\\([0-9]\\+\\).*$/\\1.\\2/")
 
 %define libname		%mklibname %{name} %{libver} %{major}
 %define develname	%mklibname %{name} -d
 
 Name:		json-glib
-Version:	0.7.6
+Version:	0.8.0
 Release:	%mkrel 1
 Summary:	Library for JavaScript Object Notation format
 Group:		System/Libraries
 License:	LGPLv2+
 URL:		http://live.gnome.org/JsonGlib
-Source0:	ftp://ftp.gnome.org/pub/GNOME/sources/%{name}/0.7/%{name}-%{version}.tar.bz2
+Source0:	ftp://ftp.gnome.org/pub/GNOME/sources/%{name}/%{mainver}/%{name}-%{version}.tar.bz2
 BuildRoot:	%{_tmppath}/%{name}-%{version}-root
 BuildRequires:	glib2-devel
 BuildRequires:	gtk-doc
