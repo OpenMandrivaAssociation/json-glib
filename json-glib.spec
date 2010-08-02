@@ -5,14 +5,13 @@
 %define develname	%mklibname %{name} -d
 
 Name:		json-glib
-Version:	0.10.4
-Release:	%mkrel 2
+Version:	0.11.2
+Release:	%mkrel 1
 Summary:	Library for JavaScript Object Notation format
 Group:		System/Libraries
 License:	LGPLv2+
 URL:		http://live.gnome.org/JsonGlib
 Source0:	http://ftp.gnome.org/pub/GNOME/sources/%{name}/%{name}-%{version}.tar.bz2
-Patch0:		json-glib-fix-pkgconfig.patch
 BuildRoot:	%{_tmppath}/%{name}-%{version}-root
 BuildRequires:	glib2-devel
 BuildRequires:	gobject-introspection-devel
@@ -46,7 +45,6 @@ developing applications that use %{name}.
 
 %prep
 %setup -q
-%patch0 -p1
 
 %build
 %configure2_5x	--enable-static=no
