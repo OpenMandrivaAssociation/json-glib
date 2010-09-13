@@ -6,7 +6,7 @@
 
 Name:		json-glib
 Version:	0.11.2
-Release:	%mkrel 1
+Release:	%mkrel 2
 Summary:	Library for JavaScript Object Notation format
 Group:		System/Libraries
 License:	LGPLv2+
