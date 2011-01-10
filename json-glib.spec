@@ -5,7 +5,7 @@
 %define develname	%mklibname %{name} -d
 
 Name:		json-glib
-Version:	0.12.0
+Version:	0.12.2
 Release:	%mkrel 1
 Summary:	Library for JavaScript Object Notation format
 Group:		System/Libraries
