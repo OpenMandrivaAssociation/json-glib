@@ -65,7 +65,7 @@ developing applications that use %{name}.
 %_libdir/girepository-1.0/Json-%{libver}.typelib
 
 %files -n %{develname}
-%doc README NEWS ChangeLog
+%doc NEWS ChangeLog
 %{_libdir}/lib%{name}-%{libver}.so
 %{_libdir}/pkgconfig/%{name}-%{libver}.pc
 %{_includedir}/%{name}-%{libver}/
