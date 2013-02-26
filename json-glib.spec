@@ -1,12 +1,12 @@
 %define libver 1.0
 %define major 0
 
-%define libname		%mklibname %{name} %{libver} %{major}
-%define develname	%mklibname %{name} -d
+%define libname %mklibname %{name} %{libver} %{major}
+%define develname %mklibname %{name} -d
 
 Name:		json-glib
-Version:	0.14.2
-Release:	4
+Version:	0.15.2
+Release:	1
 Summary:	Library for JavaScript Object Notation format
 Group:		System/Libraries
 License:	LGPLv2+
@@ -51,7 +51,6 @@ developing applications that use %{name}.
 
 
 %install
-rm -rf %{buildroot}
 %makeinstall_std
 
 %find_lang %{name}-%{libver}
