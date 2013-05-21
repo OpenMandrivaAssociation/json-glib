@@ -29,7 +29,7 @@ Group:		System/Internationalization
 Obsoletes:	%{name} < 0.15.2-2
 
 %description i18n
-This package contains the tranlation files for %{name}.
+This package contains the translation files for %{name}.
 
 %package -n %{libname}
 Summary:	Shared libraries for %{name}
