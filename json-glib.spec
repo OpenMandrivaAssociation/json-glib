@@ -26,6 +26,7 @@ for the JavaScript Object Notation (JSON) format.
 %package i18n
 Summary:	Language files for %{name}
 Group:		System/Internationalization
+BuildArch:	noarch
 Obsoletes:	%{name} < 0.15.2-2
 
 %description i18n
