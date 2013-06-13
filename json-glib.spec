@@ -1,15 +1,15 @@
 %define url_ver %(echo %{version}|cut -d. -f1,2)
 
-%define api	1.0
-%define major	0
+%define api 1.0
+%define major 0
 %define libname %mklibname %{name} %{api} %{major}
 %define girname %mklibname %{name}-gir %{api}
 %define devname %mklibname %{name} -d
 
 Summary:	Library for JavaScript Object Notation format
 Name:		json-glib
-Version:	0.15.2
-Release:	2
+Version:	0.16.0
+Release:	1
 Group:		System/Libraries
 License:	LGPLv2+
 Url:		http://live.gnome.org/JsonGlib
