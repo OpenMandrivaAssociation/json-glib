@@ -1,2 +1,4 @@
-sources:
+removed_sources:
   json-glib-0.16.0.tar.xz: 9e0af8625586fc2e70e12b4beae31b120cff5090
+sources:
+  json-glib-0.16.2.tar.xz: a67e1f0d5a3cc5c96e999ddb24c75c6ca21d8252
