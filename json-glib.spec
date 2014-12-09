@@ -71,7 +71,6 @@ developing applications that use %{name}.
 %files -f %{name}-%{api}.lang
 %{_bindir}/json-glib-format
 %{_bindir}/json-glib-validate
-%{_datadir}/man/man1/*
 
 %files -n %{libname}
 %{_libdir}/lib%{name}-%{api}.so.%{major}*
