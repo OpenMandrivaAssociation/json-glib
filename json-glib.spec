@@ -8,8 +8,8 @@
 
 Summary:	Library for JavaScript Object Notation format
 Name:		json-glib
-Version:	0.16.0
-Release:	2
+Version:	1.1.2
+Release:	0.1
 Group:		System/Libraries
 License:	LGPLv2+
 Url:		http://live.gnome.org/JsonGlib
@@ -19,23 +19,16 @@ BuildRequires:	gtk-doc
 BuildRequires:	pkgconfig(glib-2.0)
 BuildRequires:	pkgconfig(gobject-introspection-1.0)
 
+Obsoletes:	 json-glib-i18n < 1.1.2
+Provides:	 json-glib-i18n = 1.1.2
+
 %description
 %{name} is a library providing serialization and deserialization support
 for the JavaScript Object Notation (JSON) format.
 
-%package i18n
-Summary:	Language files for %{name}
-Group:		System/Internationalization
-BuildArch:	noarch
-Obsoletes:	%{name} < 0.15.2-2
-
-%description i18n
-This package contains the translation files for %{name}.
-
 %package -n %{libname}
 Summary:	Shared libraries for %{name}
 Group:		System/Libraries
-Suggests:	%{name}-i18n = %{version}-%{release}
 Provides:	%{name} = %{version}-%{release}
 
 %description -n %{libname}
@@ -67,7 +60,8 @@ developing applications that use %{name}.
 %build
 %configure2_5x \
 	--disable-static
-%make 
+
+%make
 
 %install
 %makeinstall_std
@@ -76,7 +70,10 @@ developing applications that use %{name}.
 %check
 %make check
 
-%files i18n -f %{name}-%{api}.lang
+%files -f %{name}-%{api}.lang
+%{_bindir}/json-glib-format
+%{_bindir}/json-glib-validate
+%{_mandir}/man1/json-glib-*.1.*
 
 %files -n %{libname}
 %{_libdir}/lib%{name}-%{api}.so.%{major}*
