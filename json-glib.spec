@@ -71,7 +71,6 @@ developing applications that use %{name}.
 %files -f %{name}-%{api}.lang
 %{_bindir}/json-glib-format
 %{_bindir}/json-glib-validate
-%{_mandir}/man1/json-glib-*.1.*
 
 %files -n %{libname}
 %{_libdir}/lib%{name}-%{api}.so.%{major}*
@@ -80,9 +79,9 @@ developing applications that use %{name}.
 %_libdir/girepository-1.0/Json-%{api}.typelib
 
 %files -n %{devname}
-%doc NEWS ChangeLog
 %{_libdir}/lib%{name}-%{api}.so
 %{_libdir}/pkgconfig/%{name}-%{api}.pc
 %{_includedir}/%{name}-%{api}/
-%{_datadir}/gtk-doc/html/%{name}/
 %{_datadir}/gir-1.0/Json-%{api}.gir
+%{_prefix}/libexec/installed-tests/json-glib-%{api}
+%{_datadir}/installed-tests/json-glib-%{api}
