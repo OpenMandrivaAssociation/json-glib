@@ -66,7 +66,7 @@ developing applications that use %{name}.
 %find_lang %{name}-%{api}
 
 %check
-%make check
+%meson_test
 
 %files -f %{name}-%{api}.lang
 %{_bindir}/json-glib-format
