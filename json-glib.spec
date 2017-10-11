@@ -8,7 +8,7 @@
 
 Summary:	Library for JavaScript Object Notation format
 Name:		json-glib
-Version:	1.2.2
+Version:	1.4.2
 Release:	1
 Group:		System/Libraries
 License:	LGPLv2+
@@ -18,7 +18,7 @@ Source0:	http://ftp.gnome.org/pub/GNOME/sources/json-glib/%{url_ver}/%{name}-%{v
 BuildRequires:	gtk-doc
 BuildRequires:	pkgconfig(glib-2.0)
 BuildRequires:	pkgconfig(gobject-introspection-1.0)
-
+BuildRequires:	meson
 %rename json-glib-i18n
 
 %description
@@ -57,11 +57,12 @@ developing applications that use %{name}.
 %setup -q
 
 %build
-%configure
-%make
+%meson
+%make_build
 
 %install
-%makeinstall_std
+%meson_install
+
 %find_lang %{name}-%{api}
 
 %check
