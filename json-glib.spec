@@ -58,7 +58,7 @@ developing applications that use %{name}.
 
 %build
 %meson
-%make_build
+%meson_build
 
 %install
 %meson_install
