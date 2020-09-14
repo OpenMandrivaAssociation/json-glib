@@ -8,7 +8,7 @@
 
 Summary:	Library for JavaScript Object Notation format
 Name:		json-glib
-Version:	1.4.4
+Version:	1.6.0
 Release:	1
 Group:		System/Libraries
 License:	LGPLv2+
@@ -71,6 +71,7 @@ developing applications that use %{name}.
 %files -f %{name}-%{api}.lang
 %{_bindir}/json-glib-format
 %{_bindir}/json-glib-validate
+%{_datadir}/gtk-doc/html/json-glib/
 
 %files -n %{libname}
 %{_libdir}/lib%{name}-%{api}.so.%{major}*
