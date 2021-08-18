@@ -73,6 +73,7 @@ developing applications that use %{name}.
 %{_bindir}/json-glib-format
 %{_bindir}/json-glib-validate
 #{_datadir}/gtk-doc/html/json-glib/
+%doc %{_datadir}/doc/json-glib-1.0/
 
 %files -n %{libname}
 %{_libdir}/lib%{name}-%{api}.so.%{major}*
