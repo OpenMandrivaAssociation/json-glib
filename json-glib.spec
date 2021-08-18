@@ -19,6 +19,7 @@ BuildRequires:	gtk-doc
 BuildRequires:	pkgconfig(glib-2.0)
 BuildRequires:	pkgconfig(gobject-introspection-1.0)
 BuildRequires:	meson
+BuildRequires:  pkgconfig(gi-docgen)
 %rename json-glib-i18n
 
 %description
