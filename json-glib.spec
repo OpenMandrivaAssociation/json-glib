@@ -15,6 +15,7 @@ License:	LGPLv2+
 Url:		http://live.gnome.org/JsonGlib
 Source0:	http://ftp.gnome.org/pub/GNOME/sources/json-glib/%{url_ver}/%{name}-%{version}.tar.xz
 
+BuildRequires:  gettext
 BuildRequires:	gtk-doc
 BuildRequires:	pkgconfig(glib-2.0)
 BuildRequires:	pkgconfig(gobject-introspection-1.0)
