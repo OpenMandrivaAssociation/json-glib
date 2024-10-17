@@ -12,7 +12,7 @@ Version:	1.10.0
 Release:	1
 Group:		System/Libraries
 License:	LGPLv2+
-Url:		http://live.gnome.org/JsonGlib
+Url:		https://live.gnome.org/JsonGlib
 Source0:	http://ftp.gnome.org/pub/GNOME/sources/json-glib/%{url_ver}/%{name}-%{version}.tar.xz
 
 BuildRequires:  gettext
