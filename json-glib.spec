@@ -9,11 +9,11 @@
 Summary:	Library for JavaScript Object Notation format
 Name:		json-glib
 Version:	1.10.6
-Release:	1
+Release:	2
 Group:		System/Libraries
 License:	LGPLv2+
 Url:		https://live.gnome.org/JsonGlib
-Source0:	http://ftp.gnome.org/pub/GNOME/sources/json-glib/%{url_ver}/%{name}-%{version}.tar.xz
+Source0:	https://ftp.gnome.org/pub/GNOME/sources/json-glib/%{url_ver}/%{name}-%{version}.tar.xz
 
 BuildRequires:  gettext
 BuildRequires:	gtk-doc
