@@ -9,7 +9,7 @@
 Summary:	Library for JavaScript Object Notation format
 Name:		json-glib
 Version:	1.10.8
-Release:	1
+Release:	2
 Group:		System/Libraries
 License:	LGPLv2+
 Url:		https://live.gnome.org/JsonGlib
@@ -57,7 +57,7 @@ This package contains libraries and header files for
 developing applications that use %{name}.
 
 %prep
-%setup -q
+%autosetup -p1
 
 %build
 %meson
